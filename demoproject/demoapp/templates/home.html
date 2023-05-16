@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+   
+   <div> 
+    <label for="">Name</label>
+    <input type="text" name="Name" required>
+   </div>
+<br>
+
+<div>
+    <label for="">Date_Of_Birth</label>
+    <input type="date" name="Date_Of_Birth" required>
+        </div>
+        <div>
+            <br>
+
+            <br>
+            <div>
+        <label for="">email</label>
+        <input type="email" name="email" required>
+            </div>
+
+<div>
+    <label for="">Designation</label>
+    <input type="text" name="Designation" required>
+</div>
+<br>
+        <div>
+    <label for="">Salary</label>
+    <input type="number" name="Salary" required>
+        </div>
+        <div>
+
+    <input type="submit" value="Submit">
+    
+        </div>
+    
+    </form>
+{% endblock %}
